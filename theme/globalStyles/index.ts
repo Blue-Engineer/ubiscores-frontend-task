@@ -4,9 +4,11 @@ import reset from "../reset";
 export const GlobalStyles = createGlobalStyle`
 ${reset};
 
-html {
+html, body {
     font-family: 'Epilogue', sans-serif;
     scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 

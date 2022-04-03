@@ -17,7 +17,7 @@ const Success = ({ changeStep }: any) => {
       <Button
         type="submit"
         variant="primary"
-        width="256"
+        size="small"
         onClick={() => changeStep(1)}
         style={{ margin: "30px 0" }}
       >

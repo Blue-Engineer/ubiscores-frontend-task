@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import responsive from "theme/responsive";
 import { IButtonEmotionProps } from "./i-button";
 
 function variantButtonStyles({ variant }: IButtonEmotionProps) {
@@ -34,7 +35,7 @@ export const ButtonStyledComponent = styled.button`
   max-width: 100%;
   text-align: center;
   overflow: hidden;
-  width: ${({ width }) => width}px;
+  width: ${({ size }) => (size === "regular" ? "375" : "256")}px;
   height: 56px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -50,6 +51,10 @@ export const ButtonStyledComponent = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  ${responsive("$medium")`
+  width: 250px;
+  `}
 
   ${({ fullWidth }) =>
     fullWidth &&

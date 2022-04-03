@@ -37,7 +37,7 @@ const GetStartedForm = ({ changeStep }: any) => {
     setIsLoading(true);
     setTimeout(() => {
       changeStep(2);
-    }, 2000);
+    }, 1000);
   };
 
   return (
@@ -103,7 +103,7 @@ const GetStartedForm = ({ changeStep }: any) => {
         <Button
           type="submit"
           variant="primary"
-          width="370"
+          size="regular"
           isLoading={isLoading}
           style={{ margin: "30px 0" }}
         >
