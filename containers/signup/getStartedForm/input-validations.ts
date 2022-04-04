@@ -13,7 +13,7 @@ export const getStartedSchema = yup.object().shape({
     .email("Please enter a valid email")
     .matches(
       /^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$/,
-      "Please enter your business email address. This form does not accepet addresses from gmail.com"
+      "Please enter your business email address. This form does not accept addresses from gmail.com"
     )
     .required("Email is required!"),
   name: yup.string().required("Name is required!"),
