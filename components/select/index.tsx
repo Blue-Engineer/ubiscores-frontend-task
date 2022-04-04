@@ -17,7 +17,7 @@ const SelectInput = ({
 }: ISelectInput) => {
   return (
     <Div>
-      <InputFieldWrapperDiv>
+      <InputFieldWrapperDiv error={error}>
         {label && <Label>{`${label}${required ? "*" : ""}`}</Label>}
         <SelectInputComponentStyle error={!!error} className="other-selct">
           <Select
