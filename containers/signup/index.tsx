@@ -8,7 +8,7 @@ const Signup = () => {
   const [step, setStep] = useState(1);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    console.log("step changed")
   }, [step]);
 
   function handleView() {

@@ -1,5 +1,5 @@
-import Signup from "containers/signup";
 import type { NextPage } from "next";
+import Signup from "containers/signup";
 import Meta from "seo";
 
 const Home: NextPage = () => {
