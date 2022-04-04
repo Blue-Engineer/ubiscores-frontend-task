@@ -48,12 +48,13 @@ const GetStartedForm = ({ changeStep }: any) => {
           Amet minim mollit non deserunt ullamco est sit aliqua dolor
         </ParagraphOne>
       </TextBlock>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form data-testid="form-box" onSubmit={handleSubmit(onSubmit)}>
         <Input
           label="Organization Website URL"
           id="website"
           error={errors.website?.message}
           {...register("website")}
+          data-testid="input"
         />
 
         <Input
@@ -61,6 +62,7 @@ const GetStartedForm = ({ changeStep }: any) => {
           id="email"
           error={errors.email?.message}
           {...register("email")}
+          data-testid="input"
         />
 
         <Input
@@ -68,6 +70,7 @@ const GetStartedForm = ({ changeStep }: any) => {
           id="name"
           error={errors.name?.message}
           {...register("name")}
+          data-testid="input"
         />
         <Controller
           control={control}
