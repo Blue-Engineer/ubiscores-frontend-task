@@ -57,7 +57,8 @@ export const InputField = styled.input<IInputProps>`
   background-color: transparent;
   height: 50px;
   border-radius: 5px;
-  color: ${({ theme }) => theme.colors?.primary};
+  color: ${({ error, theme }) =>
+    error ? theme.colors?.error : theme.colors?.primary};
   padding: 0 40px;
 
   &:-webkit-autofill,
