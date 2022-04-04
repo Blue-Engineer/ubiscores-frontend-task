@@ -37,7 +37,7 @@ const Input = forwardRef<HTMLInputElement, IInputProps>(
 
     return (
       <Div fullWidth={fullWidth} className={className}>
-        <InputFieldWrapperDiv>
+        <InputFieldWrapperDiv error={error}>
           {label && <Label>{`${label}${required ? "*" : ""}`}</Label>}
           <InputField
             id={id}

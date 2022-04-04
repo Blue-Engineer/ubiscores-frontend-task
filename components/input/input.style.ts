@@ -21,12 +21,14 @@ export const Label = styled.legend`
   transition: color ease-in-out 0.2s;
 `;
 
-export const InputFieldWrapperDiv = styled.fieldset`
+export const InputFieldWrapperDiv = styled.fieldset<{ error: any }>`
   position: relative;
   display: flex;
   align-items: center;
   border-radius: 5px;
-  border: 1px solid ${({ theme }) => theme.colors?.border};
+  border: 1px solid
+    ${({ error, theme }) =>
+      error ? theme.colors?.error : theme.colors?.border};
   transition: border ease-in-out 0.2s;
 
   ${Div}:focus-within & {
