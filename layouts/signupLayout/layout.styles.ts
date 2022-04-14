@@ -38,10 +38,10 @@ export const FormDiv = styled.div`
 
   .overflow {
     width: 100%;
-    height: 100%;
+    height: 95%;
     padding: 16px 40px;
-    margin: 48px 0;
     position: relative;
     background-color: #fefdff;
+    border-radius: 0px 0px 20px 20px;
   }
 `;
